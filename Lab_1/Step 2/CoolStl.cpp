@@ -19,7 +19,7 @@ int main(int argc, char** argv)
     // Let's merge an STL mesh that we would like to remesh (from the parent
     // directory):
     try {
-        gmsh::merge("EpicBanana.stl");
+        gmsh::merge("AsianGirl.stl");
     }
     catch (...) {
         gmsh::logger::write("Could not load STL mesh: bye!");
@@ -73,7 +73,7 @@ int main(int argc, char** argv)
 
     gmsh::model::mesh::generate(3);
 
-    gmsh::write("EpicBanana.msh");
+    gmsh::write("AsianGirl.msh");
 
     std::set<std::string> args(argv, argv + argc);
     if (!args.count("-nopopup")) gmsh::fltk::run();
